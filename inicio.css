@@ -1,0 +1,209 @@
+/* Reset CSS */
+#imga {
+    width: 200px;
+    height: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #009ddb;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+.header .menu ul {
+    list-style: none;
+}
+
+.header .menu ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner */
+.banner {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.banner .btn-primary {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.banner .btn-primary:hover {
+    background-color: #27ae60;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Serviços */
+.servicos {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.servicos h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servico {
+    display: flex; /* Adiciona flexbox */
+    align-items: flex-start; /* Alinha itens no início */
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.servico img {
+    width: 200px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px 0 0 5px; /* Borda arredondada apenas no canto superior esquerdo e inferior esquerdo */
+    margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
+}
+
+.servico-info {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    padding: 50px; /* Adiciona espaço interno */
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px; /* Adiciona espaçamento inferior ao título */
+}
+
+.servico p {
+    font-size: 18px;
+    margin-top: 60px; /* Adiciona espaçamento superior às informações */
+    margin-left: -100px;
+}
+.servico p1 {
+    font-size: 18px;
+    margin-top: 60px; /* Adiciona espaçamento superior às informações */
+    margin-left: -250px;
+}
+
+.servico p2 {
+    font-size: 18px;
+    margin-top: 60px; /* Adiciona espaçamento superior às informações */
+    margin-left: -110px;
+}
+
+/* Estilo para exibição em dispositivos menores */
+@media (max-width: 768px) {
+    .servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .servico {
+        flex-basis: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Footer */
+.footer {
+    background-color:#3498db;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-section.about p {
+    margin-bottom: 30px;
+}
+
+.footer .footer-section.links ul {
+    list-style: none;
+}
+
+.footer .footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-section.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .footer-section.contact span i {
+    margin-right: 10px;
+}
